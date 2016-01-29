@@ -154,7 +154,8 @@ function get_similar_sequences($process_id)
 
 	$obj->jsonfile =  get_process_dir($process_id) . '/' . $process_id . '.json';
 
-	file_put_contents($obj->jsonfile, json_encode($obj, JSON_PRETTY_PRINT));
+//	file_put_contents($obj->jsonfile, json_encode($obj, JSON_PRETTY_PRINT));
+	file_put_contents($obj->jsonfile, json_encode($obj));
 	
 	return $obj;
 }

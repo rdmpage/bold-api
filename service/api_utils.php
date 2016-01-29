@@ -31,7 +31,8 @@ function api_output($obj, $callback)
 	{
 		echo $callback . '(';
 	}
-	echo json_encode($obj, JSON_PRETTY_PRINT);
+//	echo json_encode($obj, JSON_PRETTY_PRINT);
+	echo json_encode($obj);
 	if ($callback != '')
 	{
 		echo ')';
